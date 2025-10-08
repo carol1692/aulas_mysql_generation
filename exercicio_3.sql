@@ -72,3 +72,7 @@ select * from tb_aluno where nota > 7.0;
 select * from tb_aluno where nota < 7.0;
 
 UPDATE tb_aluno SET nota = 5.5 WHERE Id = 6;
+
+SELECT *
+FROM tb_aluno INNER JOIN tb_materias
+ON tb_aluno.materia_id = tb_materias.id;
